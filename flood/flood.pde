@@ -19,8 +19,9 @@ void setup() {
   col[3] = color(200,100,0);
   col[4] = color(0,128,0);
   //////////////////////////// select AI ////////////////////////
+  // weak | AI < AIfresh < AIgreedy < AIvoronoi| strong
   ai[0] = new Human();
-  ai[1] = new AIvoronoi();
+  ai[1] = new AIgreedy();
   ///////////////////////////////////////////////////////////////
   Init();
 }
